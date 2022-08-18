@@ -9,7 +9,7 @@ const bashMenu = async () => {
   const taskOpt = [
     { value: 1, name: `${'1'.green}. Create task` },
     { value: 2, name: `${'2'.green}. List task` },
-    { value: 0, name: `${'0'.green}. Exit` }, 
+    { value: 0, name: `${'0'.green}. Exit` },
   ];
 
   const question = [
@@ -20,6 +20,7 @@ const bashMenu = async () => {
       choices: taskOpt,
     },
   ];
+  
   const { options } = await inquirer.prompt(question);
   return options;
 };
