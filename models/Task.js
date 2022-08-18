@@ -22,6 +22,15 @@ class Task {
       this.list.push(taskitem);
     });
   }
+
+  listToArray() {
+    this.tasklist.forEach((task, index) => {
+      const idx = index + 1;
+      const { desc, completed } = task;
+
+      let output;
+    });
+  }
 }
 
 module.exports = Task;
